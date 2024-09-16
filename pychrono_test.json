@@ -1,0 +1,1504 @@
+[
+    {
+        "instruction": "Which class is used to initialize a system with Non-Smooth Contact mechanics in PyChrono? 'A. chrono.ChSystemNSC()', 'B. chrono.ChSystemSMC()', 'C. chrono.ChSystem()', 'D. chrono.ChSystemContact()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What method is used to set the friction coefficient for a contact material in PyChrono? 'A. material.SetFriction(value)', 'B. material.SetFrictionCoefficient(value)', 'C. material.SetFrictionValue(value)', 'D. material.SetFrictionFactor(value)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "How do you add a body to the simulation in PyChrono? 'A. sys.AddBody(body)', 'B. sys.Add(body)', 'C. sys.Insert(body)', 'D. sys.AddObject(body)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What method is used to set the mass of a body in PyChrono? 'A. body.SetWeight(mass)', 'B. body.SetMass(mass)', 'C. body.MassSet(mass)', 'D. body.SetMassValue(mass)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method initializes a revolute joint in PyChrono? 'A. chrono.ChLinkRevolute.Initialize(body1, body2, frame)', 'B. chrono.ChLinkLockRevolute.Initialize(body1, body2, frame)', 'C. chrono.ChLinkRevolute.Setup(body1, body2, frame)', 'D. chrono.ChLinkRevolute.Connect(body1, body2, frame)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the method sys.DoStepDynamics(time_step) in PyChrono? 'A. To reset the simulation', 'B. To advance the simulation by a time step', 'C. To render the simulation', 'D. To initialize the simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to retrieve the full path to a data file in PyChrono? 'A. chrono.GetDataFile(filename)', 'B. chrono.GetChronoDataFile(filename)', 'C. chrono.GetFilePath(filename)', 'D. chrono.GetResourcePath(filename)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the method vis.AddCamera(position) in PyChrono? 'A. To set the camera's position in the scene', 'B. To add a camera to the simulation', 'C. To initialize the camera', 'D. To remove a camera from the scene'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which class is used to create a contact material for smooth body interactions in PyChrono? 'A. chrono.ChContactMaterialNSC()', 'B. chrono.ChContactMaterialSMC()', 'C. chrono.ChContactMaterial()', 'D. chrono.ChMaterialSmooth()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'chrono.SetChronoDataPath()' function in PyChrono? 'A. To set the simulation time step', 'B. To define the data paths for loading resources', 'C. To initialize the vehicle', 'D. To configure the visualization settings'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to create an ART vehicle in PyChrono? 'A. veh.CreateVehicle(ART)', 'B. veh.ARTcar()', 'C. veh.NewVehicle(ART)', 'D. veh.InitializeVehicle(ART)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How is the camera configured to follow the vehicle? 'A. vis.SetCameraFollow(vehicle)', 'B. vis.SetChaseCamera(trackPoint, distance, height)', 'C. vis.AttachCamera(vehicle)', 'D. vis.FollowVehicle(vehicle)',",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'driver.SetThrottleDelta()' method? 'A. To set the maximum speed', 'B. To control the throttle response time', 'C. To initialize the driver', 'D. To set the braking response time'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to initialize the terrain in PyChrono simulation? 'A. terrain.InitializeTerrain()', 'B. terrain.Setup()', 'C. terrain.Initialize()', 'D. terrain.Start()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What does the 'vehicle.GetSystem().GetChTime()' function return? 'A. The current simulation time', 'B. The total simulation steps', 'C. The vehicle's speed', 'D. The frame rate'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which method is used to set the friction of the terrain material? 'A. patch_mat.SetFriction()', 'B. patch_mat.SetFrictionCoefficient()', 'C. patch_mat.SetFrictionValue()', 'D. patch_mat.SetFrictionLevel()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which module is used for finite element analysis in PyChrono? 'A. pychrono', 'B. pychrono.fea', 'C. pychrono.pardisomkl', 'D. pychrono.irrlicht'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What class is used to initialize a smooth contact physical system in PyChrono? 'A. ChSystem', 'B. ChSystemSMC', 'C. ChSystemFEA', 'D. ChSystemDynamics'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method sets the Young's modulus of a beam section in PyChrono? 'A. msection.SetYoungModulus(value)', 'B. msection.SetYoungModulus(value, unit)', 'C. msection.SetYoungsModulus(value, unit)', 'D. msection.SetYoungsModulus(value)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChNodeFEAxyzrot class in PyChrono? 'A. To define a fixed node', 'B. To create a node with position and rotation', 'C. To apply forces to nodes', 'D. To visualize nodes'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to add a mesh to the physical system in PyChrono? 'A. sys.AddMesh(mesh)', 'B. sys.Add(mesh)', 'C. sys.Attach(mesh)', 'D. sys.Insert(mesh)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the SetAutomaticGravity method do in PyChrono? 'A. Enables gravity for all elements', 'B. Disables automatic gravity for FEA elements', 'C. Sets the gravity vector', 'D. Applies gravity to specific nodes'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create a visualization window in PyChrono? 'A. ChVisualSystem', 'B. ChVisualSystemIrrlicht', 'C. ChVisualization', 'D. ChRenderSystem'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChLinkMateGeneric class in PyChrono? 'A. To create visual shapes', 'B. To define constraints between bodies', 'C. To apply forces', 'D. To initialize the simulation system'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which solver is set for improved accuracy in the simulation? 'A. ChSolverMKL', 'B. ChSolverPardisoMKL', 'C. ChSolverDefault', 'D. ChSolverFEA'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the DoStepDynamics method do in the simulation loop? 'A. Initializes the simulation', 'B. Renders the scene', 'C. Advances the simulation by one time step', 'D. Resets the simulation'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method is used to initialize a rotational motor in PyChrono? 'A. motor.Initialize(body1, body2)', 'B. motor.SetMotor(body1, body2)', 'C. motor.Start(body1, body2)', 'D. motor.Begin(body1, body2)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which method is used to add a body to the physical system in PyChrono? 'A. sys.AddBody(body)', 'B. sys.Add(body)', 'C. sys.InsertBody(body)', 'D. sys.AttachBody(body)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChVisualShapeBox class in the PyChrono simulation? 'A. To define physical properties', 'B. To create a visual representation of a body', 'C. To set constraints between bodies', 'D. To initialize the simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the method sys.SetSolver(pardiso_solver) do in the PyChrono simulation? 'A. Sets the simulation speed', 'B. Defines the solver for the system', 'C. Initializes the visualization', 'D. Configures the output directory'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create a mesh for finite element analysis in PyChrono? 'A. ChMeshContainer', 'B. ChMesh', 'C. ChFEMMesh', 'D. ChFiniteElementMesh'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the vis.AddCamera() method in the PyChrono visualization? 'A. To set the simulation parameters', 'B. To add a camera to the scene', 'C. To initialize the physical system', 'D. To create visual shapes'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to perform a simulation step in PyChrono? 'A. sys.Step()', 'B. sys.DoStep()', 'C. sys.DoStepDynamics()', 'D. sys.RunStep()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChBuilderCableANCF class in PyChrono? 'A. To create a fixed reference frame', 'B. To facilitate the creation of ANCF beams', 'C. To apply forces to nodes', 'D. To visualize the simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the diameter of a cable section in PyChrono? 'A. SetCableDiameter(diameter)', 'B. SetDiameter(diameter)', 'C. SetCableSize(diameter)', 'D. SetThickness(diameter)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the SetYoungModulus method define for a beam section in PyChrono? 'A. The beam's length', 'B. The beam's diameter', 'C. The material stiffness', 'D. The beam's color'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which function is used to apply a force to a node in PyChrono? 'A. ApplyForce(node, force)', 'B. SetForce(force)', 'C. node.SetForce(force)', 'D. node.ApplyForce(force)'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method initializes the visualization system in PyChrono? 'A. vis.InitializeSystem()', 'B. vis.Start()', 'C. vis.Initialize()', 'D. vis.Setup()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the SetFEMdataType method in the visualization setup? 'A. To define the type of visualization data', 'B. To set the color of the mesh', 'C. To adjust the camera angle', 'D. To change the simulation speed'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the SetWindowSize method configure in the Irrlicht visualization? 'A. The size of the simulation', 'B. The size of the rendering window', 'C. The size of the mesh window', 'D. The size of the camera window'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create a non-smooth contact physical system in PyChrono? 'A. ChSystemNSC', 'B. ChSystemSMC', 'C. ChSystem', 'D. ChSystemContact'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What method is used to load a predefined mesh in PyChrono? 'A. LoadMesh()', 'B. LoadWavefrontMesh()', 'C. LoadMeshFile()', 'D. LoadWavefront()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you set the position of a body in PyChrono? 'A. body.SetPosition()', 'B. body.SetPos()', 'C. body.SetPosit()', 'D. body.SetLocation()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to add a visual shape to a body in PyChrono? 'A. AddVisualShape()', 'B. AttachVisualShape()', 'C. SetVisualShape()', 'D. AddShape()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChSensorManager in PyChrono? 'A. To manage physical bodies', 'B. To manage sensors', 'C. To manage visual shapes', 'D. To manage simulation time'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the lag for a camera sensor in PyChrono? 'A. SetLag()', 'B. SetDelay()', 'C. SetTimeLag()', 'D. SetSensorLag()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which function is used to step the simulation forward in PyChrono? 'A. StepSimulation()', 'B. DoStepDynamics()', 'C. AdvanceSimulation()', 'D. UpdateDynamics()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which module is used for vehicle dynamics in PyChrono? 'A. pychrono.truck', 'B. pychrono.car', 'C. pychrono.vehicle', 'D. pychrono.veh'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What function is used to set the data path for the Chrono library? 'A. chrono.SetDataPath()', 'B. chrono.SetChronoDataPath()', 'C. chrono.SetPath()', 'D. chrono.SetChronoPath()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method initializes the vehicle in the simulation? 'A. vehicle.Start()', 'B. vehicle.Initialize()', 'C. vehicle.Begin()', 'D. vehicle.Setup()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to set the camera tracking point? 'A. vis.SetCameraPosition()', 'B. vis.SetChaseCamera()', 'C. vis.SetCameraTrack()', 'D. vis.SetTrackPoint()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'driver.Synchronize()' method in the simulation loop? 'A. To update the vehicle position', 'B. To process driver inputs', 'C. To render the scene', 'D. To initialize the driver'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to print the vehicle mass to the console? 'A. print(vehicle.GetMass())', 'B. print(vehicle.GetVehicle().GetMass())', 'C. vehicle.PrintMass()', 'D. vehicle.GetMass().Print()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the time step size defined for the simulation? 'A. 1e-2', 'B. 1e-3', 'C. 1e-4', 'D. 1e-5'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to create the terrain in the simulation? 'A. veh.CreateTerrain()', 'B. veh.RigidTerrain()', 'C. terrain.Create()', 'D. terrain.Initialize()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `chrono.ChSystemNSC()` in PyChrono? 'A. To create a new simulation system', 'B. To set the simulation time step', 'C. To initialize the visualization', 'D. To define the collision model'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which method is used to set the gravitational acceleration in the PyChrono system? 'A. system.SetGravity(gravity)', 'B. system.SetGravitationalAcceleration(gravity)', 'C. system.SetGravityAcceleration(gravity)', 'D. system.SetAcceleration(gravity)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you fix a body in place in PyChrono? 'A. body.SetFixed(True)', 'B. body.Fix()', 'C. body.SetStatic(True)', 'D. body.SetPositionFixed(True)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What function is used to initialize the rover's position and orientation? 'A. rover.Initialize(position, orientation)', 'B. rover.SetInitialPosition(position, orientation)', 'C. rover.Initialize(chrono.ChFramed(position, orientation))', 'D. rover.SetPositionAndOrientation(position, orientation)'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which class is used to create the Curiosity rover in PyChrono? 'A. chrono.CuriosityRover', 'B. robot.Curiosity', 'C. chrono.RoverCuriosity', 'D. robot.CuriosityRover'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `vis.BeginScene()` method in the simulation loop? 'A. To start the simulation', 'B. To prepare the rendering of the scene', 'C. To update the rover dynamics', 'D. To set the camera position'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to advance the simulation by one time step? 'A. system.StepDynamics(time_step)', 'B. system.DoStepDynamics(time_step)', 'C. system.AdvanceDynamics(time_step)', 'D. system.UpdateDynamics(time_step)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `driver.SetSteering(steering)` method? 'A. To control the rover's speed', 'B. To set the rover's steering input', 'C. To initialize the rover', 'D. To update the rover's position'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which library is used for rendering the simulation visually in PyChrono? 'A. matplotlib', 'B. OpenGL', 'C. irrlicht', 'D. pygame'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which class is used to create a 3D vector in PyChrono? 'A. ChVector', 'B. ChVector3d', 'C. ChVector3D', 'D. Vector3D'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What operator is used to calculate the cross product of two vectors in PyChrono? 'A. *', 'B. +', 'C. %', 'D. ^'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method is used to compute the length of a vector in PyChrono? 'A. Length()', 'B. GetLength()', 'C. Magnitude()', 'D. Norm()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChQuaterniond class in PyChrono? 'A. To represent 2D vectors', 'B. To perform matrix operations', 'C. To represent quaternions for rotations', 'D. To create rigid bodies'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "How do you create a sine function using PyChrono? 'A. chrono.ChFunctionSine()', 'B. chrono.SineFunction()', 'C. chrono.CreateSineFunction()', 'D. chrono.Sine()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChFramed class in PyChrono? 'A. To represent a 3D point', 'B. To define a transformation frame', 'C. To create a rigid body', 'D. To perform vector operations'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which operator is used to compute the dot product of two quaternions in PyChrono? 'A. *', 'B. +', 'C. %', 'D. ^'",
+        "input": "",
+        "output": "[[D]]"
+    },
+    {
+        "instruction": "What is the correct way to initialize a quaternion with four components in PyChrono? 'A. chrono.ChQuaterniond(1, 2, 3)', 'B. chrono.ChQuaterniond(1, 2, 3, 4)', 'C. chrono.ChQuaternion(1, 2, 3, 4)', 'D. chrono.Quat(1, 2, 3, 4)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to compute the derivative of a custom function in PyChrono? 'A. GetDerivative()', 'B. GetDer()', 'C. Derivative()', 'D. ComputeDerivative()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the main purpose of the PyChrono simulation script? 'A. To demonstrate collision detection, 'B. To simulate rotations using quaternions and Euler angles', 'C. To visualize 2D graphics', 'D. To perform numerical integration'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which library is essential for handling matrices and arrays in PyChrono? 'A. math', 'B. os', 'C. numpy', 'D. scipy'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What method is used to set a quaternion from a rotation about the X-axis? 'A. q.SetFromAngleX(angle)', 'B. q.SetAngleX(angle)', 'C. q.SetRotationX(angle)', 'D. q.SetFromX(angle)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "How are the Euler angles converted to radians in the PyChrono script? 'A. Using math.radians()', 'B. Using chrono.CH_DEG_TO_RAD', 'C. Using numpy.deg2rad()', 'D. Using math.degrees()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is called to create a rotation matrix from a quaternion? 'A. chrono.ChMatrix3d(q)', 'B. chrono.ChMatrix33d(q)', 'C. chrono.CreateRotationMatrix(q)', 'D. chrono.RotationMatrix(q)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to retrieve Euler angles from a quaternion? 'A. q.GetEulerAngles()', 'B. q.GetCardanAnglesXYZ()', 'C. q.GetAnglesXYZ()', 'D. q.GetRotationAngles()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'GetVal' method in the custom function class? 'A. To set the value of the function', 'B. To get the value of the function at a specific x', 'C. To evaluate the derivative of the function', 'D. To create a new function'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to create a ramp function in PyChrono? 'A. chrono.ChFunctionRamp()', 'B. chrono.CreateRampFunction()', 'C. chrono.RampFunction()', 'D. chrono.CreateRamp()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the 'SetAmplitude' method configure in a sine function? 'A. The frequency of the sine wave', 'B. The vertical shift of the sine wave', 'C. The height of the sine wave', 'D. The duration of the sine wave'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "How do you create an output directory in PyChrono? 'A. os.create(out_dir)', 'B. os.mkdir(out_dir)', 'C. os.newdir(out_dir)', 'D. os.make_directory(out_dir)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the output of the 'GetDer' method? 'A. The value of the function', 'B. The first derivative of the function', 'C. The second derivative of the function', 'D. The amplitude of the function'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create a sequence of functions in PyChrono? 'A. chrono.ChFunctionSequence()', 'B. chrono.FunctionSequence()', 'C. chrono.ChSequence()', 'D. chrono.SequenceFunction()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the 'SetSliceWidth' method do in a repeating sequence? 'A. Sets the height of the slice', 'B. Sets the duration of the slice', 'C. Sets the width of each slice', 'D. Sets the start point of the slice'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method is used to write results to a file in Python? 'A. writeFile()', 'B. file.write()', 'C. write()', 'D. file.output()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'Setup' method in a function sequence? 'A. To prepare the function sequence for evaluation', 'B. To create a new function', 'C. To reset the function sequence', 'D. To delete the function sequence'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which module is used for core simulation functionalities in PyChrono? 'A. pychrono.irrlicht', 'B. pychrono', 'C. pychrono.central', 'D. pychrono.simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What class is used to report contact events in PyChrono? 'A. ContactMaterial', 'B. ChBody', 'C. ReportContactCallback', 'D. ChSystemNSC'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method is used to set the gravitational acceleration in a PyChrono simulation? 'A. sys.SetGravity(gravity)', 'B. sys.SetGravitationalAcceleration(gravity)', 'C. sys.SetGravityAcceleration(gravity)', 'D. sys.SetAcceleration(gravity)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the OnAddContact method in the ContactMaterial class? 'A. To initialize the simulation', 'B. To report contact points', 'C. To set friction properties', 'D. To create bodies'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which function is used to add a box geometry to a body in PyChrono? 'A. chrono.AddBoxGeometry(body, material, size, position)', 'B. body.AddBoxGeometry(material, size, position)', 'C. chrono.AddBox(body, material, size, position)', 'D. body.AddGeometryBox(material, size, position)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which method is used to enable collision for a body in PyChrono? 'A. body.EnableCollision()', 'B. body.SetCollisionEnabled(True)', 'C. body.CollisionEnable()', 'D. body.SetCollision(True)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the method sys.DoStepDynamics(dt) do in PyChrono? 'A. Initializes the simulation', 'B. Advances the simulation by a time step', 'C. Resets the simulation', 'D. Stops the simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the friction parameter in the simulation? 'A. To set the color of the bodies', 'B. To define the collision envelope', 'C. To control the sliding behavior between bodies', 'D. To set the mass of the bodies'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which function is used to add falling items to the simulation in PyChrono? 'A. AddFallingItems(sys)', 'B. AddFallingBodies(sys)', 'C. CreateFallingItems(sys)', 'D. GenerateFallingItems(sys)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What type of collision system is set in the simulation using `sys.SetCollisionSystemType()`? 'A. Type_BULLET', 'B. Type_BOX2D', 'C. Type_ODE', 'D. Type_NEWTON'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the `chrono.ChLinkMotorRotationSpeed()` in the simulation? 'A. To control the rotation speed of a body', 'B. To create a fixed joint', 'C. To add a collision shape', 'D. To set the mass of a body'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "How is the visual representation of a sphere created in PyChrono? 'A. chrono.ChVisualShapeSphere(radius)', 'B. chrono.CreateVisualSphere(radius)', 'C. chrono.VisualShapeSphere(radius)', 'D. chrono.AddVisualSphere(radius)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the `sys.DoStepDynamics(time_step)` function do in the simulation loop? 'A. Advances the simulation by one time step', 'B. Renders the visual scene', 'C. Initializes the simulation', 'D. Adds a new body to the system'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which method is used to set the position of a body in PyChrono? 'A. body.SetPos(position)', 'B. body.SetPosition(position)', 'C. body.PositionSet(position)', 'D. body.SetPositionXYZ(x, y, z)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the `AddContainerWall()` function? 'A. To create walls for the container', 'B. To add falling items', 'C. To initialize the simulation', 'D. To set the camera view'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the expected output of the simulation? 'A. A visual representation of falling objects and a rotating mixer', 'B. A text output of forces', 'C. A log of simulation parameters', 'D. A 3D model file'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What method is used to set the collision system type in PyChrono? 'A. sys.SetCollisionType()', 'B. sys.SetCollisionSystem()', 'C. sys.SetCollisionSystemType()', 'D. sys.SetCollisionTypeSystem()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which class is used to create a fixed floor in PyChrono? 'A. ChBodyFixed', 'B. ChBodyEasyBox', 'C. ChBodyStatic', 'D. ChFloorBody'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChContactMaterialNSC class in PyChrono? 'A. To define visual properties', 'B. To define physical properties for collisions', 'C. To set the simulation time', 'D. To create a simulation environment'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChVisualShapeTriangleMesh class? 'A. To create a collision shape', 'B. To create a visual representation of a mesh', 'C. To define material properties', 'D. To set the simulation parameters'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to initialize the Irrlicht visualization system? 'A. vis.Start()', 'B. vis.Begin()', 'C. vis.Initialize()', 'D. vis.Setup()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChSystemNSC class in PyChrono? 'A. To create a simulation system for smooth dynamics', 'B. To create a simulation system for non-smooth contact dynamics', 'C. To visualize the simulation', 'D. To handle collision detection'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to set the maximum number of iterations for the solver in PyChrono? 'A. sys.SetMaxIterations(70)', 'B. sys.GetSolver().SetMaxIterations(70)', 'C. sys.GetSolver().AsIterative().SetMaxIterations(70)', 'D. sys.SetSolverIterations(70)'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What does the SetCollisionSystemType method configure in the simulation? 'A. The type of visualization', 'B. The type of physics engine for collision detection', 'C. The type of material properties', 'D. The type of body dynamics'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you enable collision detection for a body in PyChrono? 'A. body.EnableCollisionDetection(True)', 'B. body.EnableCollision(True)', 'C. body.SetCollisionEnabled(True)', 'D. body.CollisionEnable(True)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the position of a brick in the simulation? 'A. body_brick.SetPos(chrono.ChVector3d(x, y, z))', 'B. body_brick.SetPosition(chrono.ChVector3d(x, y, z))', 'C. body_brick.SetPositionXYZ(x, y, z)', 'D. body_brick.PositionSet(chrono.ChVector3d(x, y, z))'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChLinkLockLock class in the simulation? 'A. To create a fixed joint between two bodies', 'B. To create a locking constraint between two bodies', 'C. To enable collision detection', 'D. To set the motion of a body'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the friction property of a contact material in PyChrono? 'A. brick_material.SetFrictionCoefficient(0.5)', 'B. brick_material.SetFriction(0.5)', 'C. brick_material.FrictionSet(0.5)', 'D. brick_material.SetFrictionValue(0.5)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `chrono.ChSystemNSC()` in PyChrono? 'A. To create a new physical system', 'B. To set gravitational acceleration', 'C. To add a visual shape', 'D. To initialize a simulation loop'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "How do you create a fixed ground body in PyChrono? 'A. chrono.ChBodyEasyBox(3, 2, 0.1, 10, True, False)', 'B. chrono.ChBodyFixed(3, 2, 0.1)', 'C. chrono.ChBodyEasyBox(3, 2, 0.1, 10, False, True)', 'D. chrono.ChBody(3, 2, 0.1)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What method is used to allow a body to move in PyChrono? 'A. body.SetFixed(True)', 'B. body.SetMovable(True)', 'C. body.SetFixed(False)', 'D. body.AllowMovement()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which class is used to create a planar constraint in PyChrono? 'A. ChLinkLockPlanar', 'B. ChLinkPlanar', 'C. ChConstraintPlanar', 'D. ChLinkLock'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the `spring.SetRestLength(1.9)` method? 'A. To set the spring's damping coefficient', 'B. To define the length of the spring when at rest', 'C. To initialize the spring', 'D. To connect two bodies with a spring'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to attach the physical system to the visual system in PyChrono? 'A. vis.AttachSystem(sys)', 'B. vis.Connect(sys)', 'C. vis.Link(sys)', 'D. vis.Bind(sys)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the `vis.BeginScene()` method do in the simulation loop? 'A. Starts the rendering scene', 'B. Initializes the visual system', 'C. Ends the rendering scene', 'D. Updates the physical system'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "How is the initial position of a body set in PyChrono? 'A. body.SetPosition(chrono.ChVector3d(-1.25, -0.75, 0.1))', 'B. body.SetPos(chrono.ChVector3d(-1.25, -0.75, 0.1))', 'C. body.SetInitialPosition(chrono.ChVector3d(-1.25, -0.75, 0.1))', 'D. body.SetInitialPos(chrono.ChVector3d(-1.25, -0.75, 0.1))'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What function is used to create a new Chrono system in PyChrono? 'A. chrono.ChSystem()', 'B. chrono.ChSystemNSC()', 'C. chrono.CreateSystem()', 'D. chrono.NewSystem()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you set the gravitational acceleration to zero in PyChrono? 'A. sys.SetGravity(0)', 'B. sys.SetGravitationalAcceleration(chrono.ChVector3d(0, 0, 0))', 'C. sys.SetGravity(chrono.ChVector3d(0, 0, 0))', 'D. sys.SetAcceleration(0)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChLinkMotorRotationAngle in PyChrono? 'A. To connect two bodies', 'B. To apply a rotational force', 'C. To impose angular velocity', 'D. To set the mass of a body'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which function is used to create a universal joint in PyChrono? 'A. chrono.ChLinkUniversal()', 'B. chrono.CreateUniversalJoint()', 'C. chrono.UniversalJoint()', 'D. chrono.ChUniversalJoint()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "How do you initialize a cylindrical joint in PyChrono? 'A. cyljoint.Initialize(body1, body2)', 'B. cyljoint.Init(body1, body2)', 'C. cyljoint.Initialize(ground, shaft_2, frame)', 'D. cyljoint.Setup(body1, body2)'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChVisualSystemIrrlicht in the simulation? 'A. To perform physics calculations', 'B. To visualize the simulation', 'C. To manage simulation time', 'D. To handle user inputs'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'chrono.ChVector3d' in the initialization section? 'A. To define the vehicle's speed', 'B. To set the vehicle's position', 'C. To create a camera view', 'D. To initialize the terrain dimensions'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to create the visualization interface for the vehicle? 'A. veh.CreateVisualSystem()', 'B. veh.ChWheeledVehicleVisualSystem()', 'C. veh.ChWheeledVehicleVisualSystemIrrlicht()', 'D. veh.InitializeVisualSystem()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'driver.GetInputs()' method in the simulation loop? 'A. To retrieve vehicle mass', 'B. To get user control inputs', 'C. To update terrain settings', 'D. To synchronize the visualization'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to initialize the Gator vehicle in PyChrono? 'A. vehicle.InitializeVehicle()', 'B. vehicle.Init()', 'C. vehicle.Initialize()', 'D. vehicle.Start()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What type of visualization is set for the vehicle parts in the simulation? 'A. VisualizationType_NONE', 'B. VisualizationType_PRIMITIVES', 'C. VisualizationType_MESH', 'D. VisualizationType_SPRITE'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which class is used to create the visualization system in PyChrono? 'A. ChVisualization', 'B. ChWheeledVehicleVisualSystem', 'C. ChWheeledVehicleVisualSystemIrrlicht', 'D. ChVisualSystem'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'driver.GetInputs()' method in the simulation loop? 'A. To get the current simulation time', 'B. To retrieve user inputs for vehicle control', 'C. To update the vehicle's position', 'D. To synchronize the visualization'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the friction coefficient for the terrain in PyChrono? 'A. patch.SetFrictionCoefficient()', 'B. patch.SetFriction()', 'C. patch.SetFrictionValue()', 'D. patch.SetFrictionRatio()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to advance the simulation for one timestep for vehicles? 'A. vehicle.Step()', 'B. vehicle.Advance()', 'C. vehicle.Update()', 'D. vehicle.Run()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you set the position of a body in PyChrono? 'A. body.SetPosition(x, y, z)', 'B. body.SetPos(x, y, z)', 'C. body.SetPosition(chrono.ChVector3d(x, y, z))', 'D. body.SetPos(chrono.ChVector3d(x, y, z))'",
+        "input": "",
+        "output": "[[D]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChLinkLockRevolute class in PyChrono? 'A. To create a fixed joint between two bodies', 'B. To create a revolute joint allowing rotation', 'C. To create a prismatic joint', 'D. To create a gear constraint'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to apply a constant rotation speed to a gear in PyChrono? 'A. SetSpeedFunction()', 'B. SetRotationSpeed()', 'C. ApplyRotationSpeed()', 'D. SetMotorSpeed()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the SetTransmissionRatio method do in a gear constraint? 'A. Sets the mass of the gear', 'B. Sets the distance between gears', 'C. Sets the ratio of rotation speeds between two gears', 'D. Sets the visual properties of the gears'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChVisualMaterial class in PyChrono? 'A. To define the physical properties of a body', 'B. To create visual representations for bodies', 'C. To manage simulation time', 'D. To handle collision detection'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you initialize the visualization system in PyChrono? 'A. vis.InitializeSystem()', 'B. vis.Start()', 'C. vis.Initialize()', 'D. vis.Begin()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What type of integrator is set for the simulation in the provided code? 'A. Euler explicit', 'B. Euler implicit', 'C. Runge-Kutta', 'D. Verlet'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to create a GPS sensor in PyChrono? 'A. sens.ChGPSSensor()', 'B. sens.CreateGPSSensor()', 'C. sens.NewGPSSensor()', 'D. sens.GPSSensor()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the `vehicle.SetChassisFixed(False)` command do? 'A. Fixes the chassis in place', 'B. Allows the chassis to move', 'C. Sets the chassis to be invisible', 'D. Initializes the chassis collision type'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `terrain.Initialize()` method? 'A. To create the vehicle', 'B. To set up the visualization', 'C. To prepare the terrain for simulation', 'D. To start the simulation loop'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "In the simulation loop, what does `realtime_timer.Spin(step_size)` do? 'A. Increases the simulation speed', 'B. Synchronizes the simulation with real time', 'C. Advances the simulation by one step', 'D. Renders the scene'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to attach the vehicle to the visualization in PyChrono? 'A. vis.AttachVehicle()', 'B. vis.AddVehicle()', 'C. vis.LinkVehicle()', 'D. vis.ConnectVehicle()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the command `imu.SetLag(0)` signify in the IMU sensor setup? 'A. No delay in sensor readings', 'B. Maximum delay in sensor readings', 'C. Average delay in sensor readings', 'D. Random delay in sensor readings'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the MyCustomHandler class in the PyChrono simulation? 'A. To create a physics engine', 'B. To publish integer messages to a specified ROS topic', 'C. To manage the simulation time', 'D. To initialize the simulation system'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to create a ROS publisher in the MyCustomHandler class? 'A. interface.CreatePublisher()', 'B. interface.GetNode().create_publisher()', 'C. self.publisher.Create()', 'D. self.publisher.Publish()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What type of object is created to represent the floor in the simulation? 'A. ch.ChBodyEasySphere', 'B. ch.ChBodyEasyBox', 'C. ch.ChBodyEasyCylinder', 'D. ch.ChBodyEasyPlane'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to fix the floor object in place? 'A. floor.SetFixed(True)', 'B. floor.Fix()', 'C. floor.SetStatic(True)', 'D. floor.FixPosition()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the Tick method in the MyCustomHandler class? 'A. To initialize the ROS manager', 'B. To publish an integer message to the ROS topic', 'C. To create the simulation objects', 'D. To set the simulation time step'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the main function's role in the PyChrono simulation script? 'A. To define the physical properties', 'B. To run the simulation loop', 'C. To create the ROS node', 'D. To initialize the ROS handlers'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which ROS message type is used for publishing the ticker value? 'A. Float64', 'B. String', 'C. Int64', 'D. Bool'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What happens if the ROS manager indicates a problem during the simulation loop? 'A. The simulation continues', 'B. The simulation pauses', 'C. The loop exits', 'D. An error message is printed'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'chrono.SetChronoDataPath()' function? 'A. To set the simulation step size', 'B. To configure visualization settings', 'C. To set the data paths for the Chrono library', 'D. To initialize the vehicle model'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What type of collision is set for the chassis in the simulation? 'A. CollisionType_MESH', 'B. CollisionType_PRIMITIVES', 'C. CollisionType_NONE', 'D. CollisionType_BOTH'",
+        "input": "",
+        "output": "[[C]]"
+    },
+
+    {
+        "instruction": "What is the purpose of the 'ChContactMethod_NSC' in the simulation? 'A. To define the visualization type', 'B. To set the collision system', 'C. To specify the contact method for rigid body simulations', 'D. To initialize the vehicle'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'ChRealtimeStepTimer' in the simulation loop? 'A. To control the rendering speed', 'B. To manage real-time simulation timing', 'C. To set the simulation step size', 'D. To initialize the vehicle's mass'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the camera parameters in the visualization? 'A. vis.SetCamera()', 'B. vis.SetChaseCamera()', 'C. vis.SetView()', 'D. vis.SetCameraParams()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'driver.GetInputs()' method return? 'A. The current vehicle speed', 'B. The driver inputs for steering and throttle', 'C. The vehicle's mass', 'D. The terrain height'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to print the vehicle's mass to the console? 'A. print(vehicle.GetMass())', 'B. print(vehicle.GetTractor().GetMass())', 'C. print(vehicle.Mass())', 'D. print(vehicle.GetWeight())'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChSystemNSC() method in PyChrono? 'A. To create a visual representation', 'B. To initialize a physical system', 'C. To add a sensor', 'D. To load a mesh'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the SetPos() method do for a body in PyChrono? 'A. Sets the velocity', 'B. Sets the position', 'C. Sets the mass', 'D. Sets the orientation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create a Lidar sensor in PyChrono? 'A. ChSensor', 'B. ChLidar', 'C. ChLidarSensor', 'D. ChSensorLidar'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method is used to access the most recent XYZI data from the Lidar sensor? 'A. GetLatestData()', 'B. GetMostRecentXYZIBuffer()', 'C. GetData()', 'D. AccessXYZIData()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the PushFilter() method do in the context of Lidar sensors in PyChrono? 'A. Adds a new sensor', 'B. Applies a data processing filter', 'C. Removes a filter', 'D. Updates the sensor position'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to perform a step of dynamics in the physical system? 'A. UpdateDynamics()', 'B. DoStep()', 'C. DoStepDynamics()', 'D. StepDynamics()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChVisualShapeTriangleMesh class in PyChrono? 'A. To create a physical body', 'B. To create a visual representation of a mesh', 'C. To manage sensors', 'D. To perform calculations'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How is the Lidar sensor's offset pose defined in PyChrono? 'A. Using a ChVector3d', 'B. Using a ChFramed', 'C. Using a ChMatrix33d', 'D. Using a ChSensorPose'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What type of collision method is set for the vehicle in the simulation? 'A. ChContactMethod_SMC', 'B. ChContactMethod_NSC', 'C. ChContactMethod_BULLET', 'D. ChContactMethod_NONE'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the method SetTexture in the terrain configuration? 'A. To set the color of the terrain', 'B. To define the friction coefficient', 'C. To apply a texture image to the terrain', 'D. To initialize the terrain'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which class is used to create the vehicle in the simulation? 'A. ChVehicle', 'B. ChTrackedVehicle', 'C. M113', 'D. ChTrackedVehicleModel'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What does the method GetMass return in the context of the vehicle? 'A. The total weight of the vehicle', 'B. The mass of the vehicle', 'C. The volume of the vehicle', 'D. The density of the vehicle'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the camera to follow the vehicle? 'A. SetCameraPosition()', 'B. SetChaseCamera()', 'C. AttachCamera()', 'D. FollowVehicle()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the driver system in the simulation? 'A. To control the vehicle dynamics', 'B. To provide user input for vehicle control', 'C. To initialize the terrain', 'D. To render the visualization'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `chrono.SetChronoDataPath()` function? 'A. To set the initial position of the vehicle', 'B. To configure the data paths for the Chrono engine', 'C. To initialize the visualization', 'D. To create the terrain'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the `vehicle.Initialize()` method do? 'A. Sets the vehicle's mass', 'B. Initializes the vehicle with specified parameters', 'C. Starts the simulation', 'D. Configures the camera settings'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the camera position relative to the vehicle? 'A. vis.SetCameraPosition()', 'B. vis.SetChaseCamera()', 'C. vis.SetCamera()', 'D. vis.SetViewPoint()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `driver.GetInputs()` method? 'A. To retrieve the vehicle's mass', 'B. To get user inputs for vehicle control', 'C. To synchronize the terrain', 'D. To initialize the driver system'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which parameter controls the time step for the simulation? 'A. render_step_size', 'B. step_size', 'C. tire_step_size', 'D. contact_method'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to output the mass of the vehicle? 'A. vehicle.GetMass()', 'B. vehicle.GetVehicle().GetMass()', 'C. vehicle.GetWeight()', 'D. vehicle.MassOutput()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the frame rate set for the visualization in the simulation? 'A. 30 FPS', 'B. 50 FPS', 'C. 60 FPS', 'D. 75 FPS'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'chrono' module in PyChrono? 'A. To provide core functionalities for creating and managing physical systems', 'B. To handle user input', 'C. To manage file I/O operations', 'D. To create graphical user interfaces'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which function is used to set the gravitational acceleration in a PyChrono simulation? 'A. sys.SetGravity(chrono.ChVector3d(0, 0, 0))', 'B. sys.SetGravitationalAcceleration(chrono.ChVector3d(0, 0, 0))', 'C. sys.SetGravityAcceleration(chrono.ChVector3d(0, 0, 0))', 'D. sys.SetG(chrono.ChVector3d(0, 0, 0))'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'SetFixed(True)' method do for a body in PyChrono? 'A. It allows the body to move freely', 'B. It makes the body immovable', 'C. It sets the body's mass to zero', 'D. It enables collision for the body'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you initialize a spring link in PyChrono? 'A. spring.Initialize(body_1, ground)', 'B. spring.Initialize(body_1, ground, True)', 'C. spring.Initialize(body_1, ground, True, pointA, pointB)', 'D. spring.Initialize(ground, body_1, False)'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method is used to add a visual shape to a body in PyChrono? 'A. body.AddVisualShape(shape)', 'B. body.AddVisualShapeAsset(shape)', 'C. body.AddVisualShape(shape, frame)', 'D. body.AttachVisualShape(shape)'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'ChVisualShapeSpring' class in PyChrono? 'A. To create a visual representation of a spring', 'B. To simulate the physics of a spring', 'C. To manage the spring's properties', 'D. To define the spring's behavior in the simulation'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which method is used to run the main simulation loop in PyChrono? 'A. sys.Run()', 'B. vis.Run()', 'C. vis.Start()', 'D. sys.Execute()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'EnableCollision(False)' method do for a body in PyChrono? 'A. It enables collision detection for the body', 'B. It disables collision detection for the body', 'C. It makes the body immovable', 'D. It sets the body's mass to zero'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `ChParticleEmitter` class in PyChrono? 'A. To create a physical body', 'B. To emit particles into the simulation', 'C. To visualize the simulation', 'D. To set collision properties'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What type of collision system is set in the PyChrono simulation? 'A. ChCollisionSystem.Type_BULLET', 'B. ChCollisionSystem.Type_ODE', 'C. ChCollisionSystem.Type_SIMPLE', 'D. ChCollisionSystem.Type_NONE'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which function is used to bind a body to the visualization system in PyChrono? 'A. vis.BindBody(body)', 'B. vis.BindItem(body)', 'C. vis.AttachBody(body)', 'D. vis.AddBody(body)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the `SetTexture` method do in the context of a body in PyChrono? 'A. Sets the mass of the body', 'B. Sets the visual appearance of the body', 'C. Sets the position of the body', 'D. Sets the collision properties of the body'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `ChRandomShapeCreatorConvexHulls` class in the particle emitter? 'A. To create random shapes for particles', 'B. To set the texture of particles', 'C. To define the gravitational force', 'D. To manage particle emission rate'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the radius of the sphere body created in the simulation? 'A. 1.5', 'B. 2.1', 'C. 3.0', 'D. 4.0'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChSystemNSC class in PyChrono? 'A. To create a visualization system', 'B. To manage the simulation environment', 'C. To define the physics of a body', 'D. To set the gravitational force'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you create a fixed ground body in PyChrono? 'A. ground.SetFixed(True)', 'B. ground.SetStatic(True)', 'C. ground.SetFixedBody(True)', 'D. ground.SetStaticBody(True)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChVisualShapeCylinder class in PyChrono? 'A. To define the physics of a cylinder', 'B. To create a visual representation of a cylinder', 'C. To manage cylinder collisions', 'D. To set the mass of a cylinder'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the ChLinkLockRevolute class represent in PyChrono? 'A. A fixed joint', 'B. A sliding joint', 'C. A revolute joint', 'D. A prismatic joint'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which function is used to get the position of a body in PyChrono? 'A. body.GetPosition()', 'B. body.GetPos()', 'C. body.PosGet()', 'D. body.GetBodyPosition()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChSystemNSC class in PyChrono? 'A. To create a visual representation of objects', 'B. To manage the simulation environment and dynamics', 'C. To handle user input', 'D. To perform mathematical calculations'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you disable collision detection for a body in PyChrono? 'A. body.DisableCollision()', 'B. body.EnableCollision(False)', 'C. body.SetCollisionEnabled(False)', 'D. body.EnableCollision(False)'",
+        "input": "",
+        "output": "[[D]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChLinkLockRevolute class in the double pendulum simulation? 'A. To create a fixed joint', 'B. To allow rotation around a single axis', 'C. To connect two bodies without rotation', 'D. To simulate a spring connection'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How is the initial position of a pendulum set in PyChrono? 'A. pend.SetInitialPosition(position)', 'B. pend.SetPos(position)', 'C. pend.SetPosition(position)', 'D. pend.SetStartPosition(position)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What class is used to create a visual shape for a cylinder in PyChrono? 'A. ChVisualShapeCylinder', 'B. ChCylinderShape', 'C. ChVisualCylinder', 'D. ChShapeCylinder'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChColor class in PyChrono? 'A. To set the color of the background shapes', 'B. To set the color of visual shapes', 'C. To manage the simulation time', 'D. To create physical materials'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to create a full HMMWV vehicle model in PyChrono? 'A. veh.FALLHMMWV()', 'B. veh.HMMWV_Full()', 'C. veh.FHMMWV()', 'D. veh.NewHMMWV()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+
+    {
+        "instruction": "What is the purpose of the ChRealtimeStepTimer() in the simulation loop? 'A. To control vehicle speed', 'B. To manage rendering time', 'C. To ensure real-time simulation pacing', 'D. To initialize the driver system'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method is used to add a visual shape to the terrain patch? 'A. patch.AddVisualShape()', 'B. patch.GetGroundBody().AddVisualShape()', 'C. patch.AddShape()', 'D. patch.AttachVisualShape()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the driver.SetThrottleDelta(render_step_size / throttle_time) method control? 'A. The vehicle's steering angle', 'B. The vehicle's throttle response time', 'C. The vehicle's braking force', 'D. The vehicle's suspension stiffness'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the method vehicle.Initialize() do? 'A. Sets the vehicle's mass', 'B. Prepares the vehicle for simulation', 'C. Configures the vehicle's visualization', 'D. Resets the vehicle's position'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'hmmwv.SetContactMethod()' function in the simulation? 'A. To set the vehicle's color', 'B. To define the type of contact physics', 'C. To initialize the vehicle', 'D. To set the vehicle's speed'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the initial position of the HMMWV vehicle? 'A. hmmwv.SetInitPosition(coords)', 'B. hmmwv.SetPosition(coords)', 'C. hmmwv.InitializePosition(coords)', 'D. hmmwv.SetStartPosition(coords)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What type of visualization is set for the HMMWV chassis in the simulation? 'A. VisualizationType_SIMPLE', 'B. VisualizationType_MESH', 'C. VisualizationType_SPRITE', 'D. VisualizationType_NONE'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'terrain.Initialize()' function do? 'A. It sets the terrain color', 'B. It prepares the terrain for interaction', 'C. It adds patches to the terrain', 'D. It starts the simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the vehicle's engine type? 'A. hmmwv.SetEngineType()', 'B. hmmwv.SetMotorType()', 'C. hmmwv.EngineTypeSet()', 'D. hmmwv.SetDriveType()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which library is imported for vehicle dynamics models in PyChrono? 'A. pychrono.visual', 'B. pychrono.vehicle', 'C. pychrono.physics', 'D. pychrono.dynamics'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'vis.SetChaseCamera()' function configure? 'A. The vehicle's speed', 'B. The camera's position and behavior', 'C. The terrain's texture', 'D. The driver's controls'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'ChSystemSMC()' in PyChrono? 'A. To create a new simulation system using the Smooth Contact model', 'B. To initialize a mesh object', 'C. To set gravitational acceleration', 'D. To add visual shapes to the simulation'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the 'SetDensity()' method do in the context of beam properties? 'A. Sets the mass of the beam', 'B. Sets the density of the beam material', 'C. Sets the volume of the beam', 'D. Sets the weight of the beam'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create a beam section in PyChrono? 'A. ChBeamSection', 'B. ChBeamSectionCosserat', 'C. ChBeamSectionSimple', 'D. ChBeamSectionIGA'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'ChBuilderBeamIGA()' class? 'A. To create a mesh for FEA', 'B. To build IGA beams within a mesh', 'C. To initialize the simulation system', 'D. To set up visualization parameters'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you add a visual shape to the mesh in PyChrono? 'A. mesh.AddVisualShape(shape)', 'B. mesh.AddVisualShapeFEA(shape)', 'C. mesh.AddShape(shape)', 'D. mesh.AddVisual(shape)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'SetMotorFunction()' method do for a motor in PyChrono? 'A. Sets the torque of the motor', 'B. Sets the speed function of the motor', 'C. Sets the position of the motor', 'D. Sets the power of the motor'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to perform a static linear analysis in PyChrono? 'A. sys.DoLinearStaticAnalysis()', 'B. sys.DoStaticLinear()', 'C. sys.PerformStaticLinear()', 'D. sys.StaticLinearAnalysis()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to initialize the HMMWV vehicle in PyChrono? 'A. vehicle.Initialize()', 'B. vehicle.Start()', 'C. vehicle.Init()', 'D. vehicle.Begin()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which parameter defines the terrain height in the simulation? 'A. terrainLength', 'B. terrainWidth', 'C. terrainHeight', 'D. trackPoint'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which collision system type is set for the vehicle's system? 'A. chrono.ChCollisionSystem.Type_BULLET', 'B. chrono.ChCollisionSystem.Type_BOX', 'C. chrono.ChCollisionSystem.Type_SPHERE', 'D. chrono.ChCollisionSystem.Type_NONE'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the 'terrain.Initialize()' method do? 'A. Sets the vehicle's initial position', 'B. Initializes the terrain with a height map and texture', 'C. Creates the vehicle model', 'D. Configures the visualization settings'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to get the vehicle's mass in the simulation? 'A. vehicle.GetMass()', 'B. vehicle.GetVehicle().GetMass()', 'C. vehicle.Mass()', 'D. vehicle.GetWeight()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What type of tire model is specified in the vehicle configuration? 'A. TireModelType_RIGID', 'B. TireModelType_SOFT', 'C. TireModelType_HARD', 'D. TireModelType_FLEXIBLE'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the `terrain.SetPlotType()` method do in the context of the simulation? 'A. Sets the type of vehicle', 'B. Configures the terrain visualization', 'C. Initializes the vehicle', 'D. Adjusts the camera settings'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create the interactive driver system in the PyChrono simulation? 'A. ChDriver', 'B. ChInteractiveDriver', 'C. ChInteractiveDriverIRR', 'D. ChVehicleDriver'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which parameter is used to set the time interval between render frames in the simulation? 'A. step_size', 'B. render_step_size', 'C. time_interval', 'D. frame_time'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the `terrain.Initialize()` method require as parameters? 'A. Length, width, mesh resolution', 'B. Height, width, depth', 'C. Length, height, texture', 'D. Width, depth, friction'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "How is the initial orientation of the vehicle defined in PyChrono? 'A. Using a 3D vector', 'B. Using a quaternion', 'C. Using Euler angles', 'D. Using a rotation matrix'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'terrain.Initialize()' method do in the context of the simulation? 'A. Sets the initial position of the terrain', 'B. Prepares the terrain for simulation', 'C. Configures the terrain's visualization', 'D. Creates the terrain object'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What type of camera is set for the vehicle in the visualization? 'A. Static camera', 'B. Chase camera', 'C. Top-down camera', 'D. First-person camera'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'vis.Render()' method in the simulation loop? 'A. To update the vehicle's position', 'B. To render the current scene', 'C. To synchronize the driver inputs', 'D. To initialize the visualization system'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the `ChSystemNSC()` method in PyChrono? 'A. To create a new simulation system using Non-Smooth Contact dynamics', 'B. To load a mesh object', 'C. To initialize a sensor manager', 'D. To set the simulation time step'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "How do you create a camera sensor in PyChrono? 'A. sens.ChCameraSensor(ground_body, 30, offset_pose, 1280, 720, 1.408)', 'B. sens.CameraSensor(ground_body, 30, offset_pose, 1280, 720)', 'C. sens.ChCamera(ground_body, offset_pose, 1280, 720)', 'D. sens.Camera(ground_body, 30, offset_pose)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the `SetMass(0)` method when creating a body in PyChrono? 'A. To make the body static', 'B. To set the body as movable', 'C. To define the body's density', 'D. To initialize the body's position'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which method is used to add a visual shape to a body in PyChrono? 'A. mesh_body.AddVisualShape(trimesh_shape)', 'B. mesh_body.AttachShape(trimesh_shape)', 'C. mesh_body.AddShape(trimesh_shape)', 'D. mesh_body.SetVisualShape(trimesh_shape)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the `Update()` method in the sensor manager? 'A. To initialize sensors', 'B. To update sensor data', 'C. To register sensors', 'D. To remove sensors'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How do you create a LiDAR sensor in PyChrono? 'A. sens.ChLidarSensor(ground_body, 5., offset_pose, 90, 300)', 'B. sens.LidarSensor(ground_body, 5., offset_pose)', 'C. sens.ChLidar(ground_body, 5., offset_pose)', 'D. sens.Lidar(ground_body, 5., offset_pose, 90, 300)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which class is used to handle ROS communication in PyChrono? 'A. ChROSManager', 'B. ChROSPythonManager', 'C. ChROSHandler', 'D. ChROSCommunicationManager'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the `PushFilter()` method do in the context of sensors in PyChrono? 'A. It adds a data processing filter to the sensor', 'B. It initializes the sensor', 'C. It sets the sensor's position', 'D. It registers the sensor with the simulation'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the `SetName()` method for sensors in PyChrono? 'A. To define the sensor's output topic', 'B. To identify the sensor in the simulation', 'C. To set the sensor's position', 'D. To initialize the sensor's parameters'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChSystemNSC() method in PyChrono? 'A. To create a new simulation system with smooth contact', 'B. To create a new simulation system with non-smooth contact', 'C. To initialize the visualization system', 'D. To define simulation parameters'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which library is used for visualization in the PyChrono simulation? 'A. matplotlib', 'B. numpy', 'C. pychrono.irrlicht', 'D. pychrono.visualization'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "How do you set the position of the crank in the simulation? 'A. mcrank.SetPosition(crank_center)', 'B. mcrank.SetPos(crank_center)', 'C. mcrank.PositionSet(crank_center)', 'D. mcrank.SetPosition(crank_center + offset)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to add a motor to the crankshaft? 'A. sys.AddMotor(my_motor)', 'B. sys.Add(my_motor)', 'C. my_motor.Initialize()', 'D. sys.AddMotorFunction(my_motor)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the SetRot() method in the crank creation section? 'A. To set the crank's position', 'B. To set the crank's rotation', 'C. To set the crank's speed', 'D. To set the crank's density'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to advance the simulation by a time step? 'A. sys.StepDynamics()', 'B. sys.DoStep()', 'C. sys.DoStepDynamics(time_step)', 'D. sys.Advance(time_step)'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What does the AddTypicalLights() method do in the visualization setup? 'A. Adds a light source', 'B. Adds a camera', 'C. Initializes the simulation', 'D. Sets the window size'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "In the context of the simulation, what does the crank_rad variable represent? 'A. The thickness of the crankshaft', 'B. The radius of the crankshaft', 'C. The length of the connecting rod', 'D. The position of the crankshaft'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which command is used to create a fixed floor in the simulation? 'A. chrono.ChBodyEasyBox()', 'B. chrono.ChBodyFixed()', 'C. chrono.ChBodyStatic()', 'D. chrono.ChBodyBox()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChElasticityKirchhoffIsothropic class in PyChrono? 'A. To define rigid body dynamics', 'B. To create a mesh', 'C. To define material properties for isotropic materials', 'D. To visualize the simulation'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "How do you set the density of a material in PyChrono? 'A. material.SetDensity(density)', 'B. material.DensitySet(density)', 'C. material.SetMaterialDensity(density)', 'D. material.SetDensityTo(density)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the method sys.Setup() do in PyChrono? 'A. Initializes the visualization', 'B. Configures the physical system', 'C. Prepares the solver', 'D. Sets the output directory'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create nodes in the mesh for finite element analysis? 'A. fea.ChNodeFEA()', 'B. fea.ChNodeFEAxyz()', 'C. fea.ChNode()', 'D. fea.ChNodeMesh()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the ChVisualShapeFEA class in PyChrono? 'A. To define material properties for finite element class', 'B. To create visual representations of finite element analysis', 'C. To manage the simulation loop', 'D. To set up the output directory'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which solver is used for advanced performance in PyChrono simulations? 'A. ChSolverPardiso()', 'B. ChSolverPardisoMKL()', 'C. ChSolverBasic()', 'D. ChSolverAdvanced()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to update the physical system in the simulation loop? 'A. sys.UpdateSimulation()', 'B. sys.DoStep()', 'C. sys.DoStepDynamics(timestep)', 'D. sys.UpdateDynamics()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'vis.SetWindowSize(1280, 720)' method? 'A. To set the simulation time', 'B. To define the size of the simulation window', 'C. To initialize the Turtlebot', 'D. To set the camera position'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "How is the robot's left wheel motor speed set to zero in the simulation? 'A. robot.SetMotorSpeed(0, LEFT_DRIVE_WHEEL)', 'B. robot.SetMotorSpeed(0, 0)', 'C. robot.SetMotorSpeed(0, RIGHT_DRIVE_WHEEL)', 'D. robot.SetMotorSpeed(0, -1)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the method 'vis.BeginScene()' do in the visualization loop? 'A. Starts rendering the scene', 'B. Ends the rendering of the scene', 'C. Initializes the simulation', 'D. Sets the camera position'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of 'chrono.ChContactMaterialNSC()' in the simulation? 'A. To create a visual representation of the ground', 'B. To define contact properties for the ground', 'C. To initialize the Turtlebot', 'D. To set the gravity of the simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'robot.Initialize()' method do? 'A. Sets the robot's initial position', 'B. Prepares the robot for simulation', 'C. Starts the simulation', 'D. Configures the robot's sensors'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to initialize the UAZBUS vehicle? 'A. vehicle.Start()', 'B. vehicle.Begin()', 'C. vehicle.Initialize()', 'D. vehicle.Setup()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What does the 'terrain.Initialize()' function do? 'A. Sets the terrain height', 'B. Creates the terrain object', 'C. Prepares the terrain for simulation', 'D. Applies texture to the terrain'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which method is used to set the camera tracking point in the simulation? 'A. vis.SetCamera(trackPoint)', 'B. vis.SetChaseCamera(trackPoint, distance, height)', 'C. vis.SetCameraTracking(trackPoint)', 'D. vis.InitializeCamera(trackPoint)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'realtime_timer.Spin(step_size)' function in the simulation loop? 'A. To update the vehicle position', 'B. To synchronize the driver inputs', 'C. To maintain real-time simulation speed', 'D. To render the scene'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "Which module is used for visualization in the PyChrono simulation? 'A. pychrono.visual', 'B. pychrono.irrlicht', 'C. pychrono.render', 'D. pychrono.display'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the output of the command 'print( \"VEHICLE MASS: \", vehicle.GetVehicle().GetMass())'? 'A. It prints the vehicle's speed', 'B. It prints the vehicle's mass', 'C. It prints the vehicle's position', 'D. It prints the vehicle's orientation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'SetContactMethod' function in the HMMWV vehicle setup? 'A. To define the vehicle's color', 'B. To set the physics contact method', 'C. To initialize the vehicle's engine', 'D. To configure the vehicle's steering system'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which module is used for vehicle models in PyChrono? 'A. pychrono.ros', 'B. pychrono.vehicle', 'C. pychrono.physics', 'D. pychrono.simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'SetChassisFixed' method do in the HMMWV setup? 'A. Makes the chassis immovable', 'B. Sets the chassis to be movable', 'C. Fixes the chassis to the ground', 'D. Disables the chassis'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What does the 'SetTireStepSize' method configure in the HMMWV vehicle? 'A. The size of the tires', 'B. The simulation step size for tires', 'C. The friction of the tires', 'D. The weight of the tires'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which handler is registered to synchronize ROS with the simulation clock? 'A. ChROSBodyHandler', 'B. ChROSDriverInputsHandler', 'C. ChROSClockHandler', 'D. ChROSTerrainHandler'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'Advance' method in the simulation loop? 'A. To reset the simulation', 'B. To update the simulation state', 'C. To pause the simulation', 'D. To start the simulation'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which class is used to create a vehicle in PyChrono? 'A. ChVehicle', 'B. Gator', 'C. ChVehicleModel', 'D. VehicleDynamics'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to initialize the vehicle in PyChrono? 'A. gator.Init()', 'B. gator.Initialize()', 'C. gator.Start()', 'D. gator.Begin()'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'ChSensorManager' class in PyChrono? 'A. To manage vehicle dynamics', 'B. To handle sensor data', 'C. To create the terrain', 'D. To set the simulation parameters'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to set the initial position of the vehicle in PyChrono? 'A. gator.SetInitPosition(coords)', 'B. gator.SetPosition(coords)', 'C. gator.InitPosition(coords)', 'D. gator.SetStartPosition(coords)'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "Which method is used to add a patch to the terrain in PyChrono? 'A. terrain.AddPatch()', 'B. terrain.CreatePatch()', 'C. terrain.InsertPatch()', 'D. terrain.AddTerrainPatch()'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of the 'PushFilter' method in the camera sensor setup? 'A. To add a visual filter to the camera', 'B. To set the camera position', 'C. To initialize the camera', 'D. To start the simulation'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What does the 'Advance' method do in the simulation loop? 'A. It updates the simulation state for one timestep', 'B. It initializes the simulation', 'C. It sets the camera position', 'D. It creates the vehicle'",
+        "input": "",
+        "output": "[[A]]"
+    },
+    {
+        "instruction": "What is the purpose of 'chrono.ChContactMaterialNSC()' in the context of the ground body? 'A. To define the visual properties of the ground', 'B. To set the physical properties for collision', 'C. To create a new simulation system', 'D. To initialize the Viper rover'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which function is used to initialize the Viper rover's position and orientation? 'A. rover.SetPosition(init_pos)', 'B. rover.Initialize(chrono.ChFramed(init_pos, init_rot))', 'C. rover.Initialize(chrono.ChFrameD(init_pos, init_rot))', 'D. rover.InitPosition(init_pos, init_rot)'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "What is the role of 'viper.ViperDCMotorControl()' in the simulation? 'A. To control the camera', 'B. To manage the rover's movement', 'C. To set the ground texture', 'D. To initialize the simulation system'",
+        "input": "",
+        "output": "[[B]]"
+    },
+    {
+        "instruction": "Which method is used to render the scene in the visualization loop? 'A. vis.RenderScene()', 'B. vis.BeginScene()', 'C. vis.Render()', 'D. vis.End()'",
+        "input": "",
+        "output": "[[C]]"
+    },
+    {
+        "instruction": "What is the purpose of 'vis.AddLightWithShadow()' in the visualization setup? 'A. To add a camera', 'B. To create a light source with shadows', 'C. To initialize the simulation', 'D. To set the window title'",
+        "input": "",
+        "output": "[[B]]"
+    }
+]
