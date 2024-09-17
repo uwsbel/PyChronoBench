@@ -80,7 +80,8 @@ def calculate_success_rate(json_file_1, json_file_2):
     success_rate = (correct_matches / total_questions) * 100
     return success_rate, correct_matches, total_questions
 
-with open('deduplicated_pychrono_test.json', 'r', encoding='utf-8') as file:
+#load the ground truth data
+with open('pychrono_test.json', 'r', encoding='utf-8') as file:
     truth = json.load(file)
 with open('pychrono_test_base.json', 'r', encoding='utf-8') as file:
     base = json.load(file)

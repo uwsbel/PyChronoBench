@@ -5,14 +5,11 @@ import os
 # Initialize the OpenAI client
 client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
 
-
 def test_prompt(instruction):
     prompt = instruction
     try:
         completion = client.chat.completions.create(
-            #model="gpt-4o-mini",  # Replace with the appropriate model link or name
-            #model="ft:gpt-4o-mini-2024-07-18:uw-sbel::A6Rd900h",
-            model="ft:gpt-4o-mini-2024-07-18:uw-sbel::A877JndG",
+            model="gpt-4o-mini",  # Replace with the appropriate model link or name
             messages=[
                 {"role": "system", "content": "You are a PyChrono expert."},
                 {"role": "user", "content": prompt}
@@ -44,7 +41,7 @@ def test_LLMs(data):
     return saved_result
 
 # Load the JSON data with correct encoding
-with open('deduplicated_pychrono_test.json', 'r', encoding='utf-8') as file:
+with open('pychrono_test.json', 'r', encoding='utf-8') as file:
     json_data = json.load(file)
 
 # Improve the quality of the JSON data
