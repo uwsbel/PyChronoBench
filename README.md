@@ -1,6 +1,3 @@
-Here is your README file in markdown form:
-
-```markdown
 # PyChronoBench
 
 **PyChronoBench** is a multiple-choice benchmark designed to evaluate the performance of large language models (LLMs) in using the PyChrono API. The benchmark consists of **280 multiple-choice problems** that cover various aspects of PyChrono API usage.
@@ -36,6 +33,3 @@ Here are some examples:
 ### Usage
 
 PyChronoBench is designed to be easy to integrate into your LLM evaluation pipeline, offering standardized and consistent questions to measure PyChrono API knowledge and decision-making.
-```
-
-You can copy and paste this markdown into your README file. Let me know if you need further adjustments!
