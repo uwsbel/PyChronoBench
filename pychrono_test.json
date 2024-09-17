@@ -265,11 +265,6 @@
         "output": "[[B]]"
     },
     {
-        "instruction": "What is the time step size defined for the simulation? 'A. 1e-2', 'B. 1e-3', 'C. 1e-4', 'D. 1e-5'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
         "instruction": "Which function is used to create the terrain in the simulation? 'A. veh.CreateTerrain()', 'B. veh.RigidTerrain()', 'C. terrain.Create()', 'D. terrain.Initialize()'",
         "input": "",
         "output": "[[B]]"
@@ -365,11 +360,6 @@
         "output": "[[B]]"
     },
     {
-        "instruction": "What is the main purpose of the PyChrono simulation script? 'A. To demonstrate collision detection, 'B. To simulate rotations using quaternions and Euler angles', 'C. To visualize 2D graphics', 'D. To perform numerical integration'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
         "instruction": "Which library is essential for handling matrices and arrays in PyChrono? 'A. math', 'B. os', 'C. numpy', 'D. scipy'",
         "input": "",
         "output": "[[C]]"
@@ -380,7 +370,7 @@
         "output": "[[A]]"
     },
     {
-        "instruction": "How are the Euler angles converted to radians in the PyChrono script? 'A. Using math.radians()', 'B. Using chrono.CH_DEG_TO_RAD', 'C. Using numpy.deg2rad()', 'D. Using math.degrees()'",
+        "instruction": "How are the Euler angles converted to radians in PyChrono simulation? 'A. Using math.radians()', 'B. Using chrono.CH_DEG_TO_RAD', 'C. Using numpy.deg2rad()', 'D. Using math.degrees()'",
         "input": "",
         "output": "[[B]]"
     },
@@ -450,11 +440,6 @@
         "output": "[[C]]"
     },
     {
-        "instruction": "Which method is used to set the gravitational acceleration in a PyChrono simulation? 'A. sys.SetGravity(gravity)', 'B. sys.SetGravitationalAcceleration(gravity)', 'C. sys.SetGravityAcceleration(gravity)', 'D. sys.SetAcceleration(gravity)'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
         "instruction": "What is the purpose of the OnAddContact method in the ContactMaterial class? 'A. To initialize the simulation', 'B. To report contact points', 'C. To set friction properties', 'D. To create bodies'",
         "input": "",
         "output": "[[C]]"
@@ -481,11 +466,6 @@
     },
     {
         "instruction": "Which function is used to add falling items to the simulation in PyChrono? 'A. AddFallingItems(sys)', 'B. AddFallingBodies(sys)', 'C. CreateFallingItems(sys)', 'D. GenerateFallingItems(sys)'",
-        "input": "",
-        "output": "[[A]]"
-    },
-    {
-        "instruction": "What type of collision system is set in the simulation using `sys.SetCollisionSystemType()`? 'A. Type_BULLET', 'B. Type_BOX2D', 'C. Type_ODE', 'D. Type_NEWTON'",
         "input": "",
         "output": "[[A]]"
     },
@@ -585,7 +565,7 @@
         "output": "[[A]]"
     },
     {
-        "instruction": "How do you create a fixed ground body in PyChrono? 'A. chrono.ChBodyEasyBox(3, 2, 0.1, 10, True, False)', 'B. chrono.ChBodyFixed(3, 2, 0.1)', 'C. chrono.ChBodyEasyBox(3, 2, 0.1, 10, False, True)', 'D. chrono.ChBody(3, 2, 0.1)'",
+        "instruction": "How do you create a ground body in PyChrono? 'A. chrono.ChBodyEasyBox(3, 2, 0.1, 10, True, False)', 'B. chrono.ChBodyFixed(3, 2, 0.1)', 'C. chrono.ChBodyMove(3, 2, 0.1, 10, False, True)', 'D. chrono.ChBody(3, 2, 0.1)'",
         "input": "",
         "output": "[[A]]"
     },
@@ -670,11 +650,6 @@
         "output": "[[C]]"
     },
     {
-        "instruction": "What type of visualization is set for the vehicle parts in the simulation? 'A. VisualizationType_NONE', 'B. VisualizationType_PRIMITIVES', 'C. VisualizationType_MESH', 'D. VisualizationType_SPRITE'",
-        "input": "",
-        "output": "[[C]]"
-    },
-    {
         "instruction": "Which class is used to create the visualization system in PyChrono? 'A. ChVisualization', 'B. ChWheeledVehicleVisualSystem', 'C. ChWheeledVehicleVisualSystemIrrlicht', 'D. ChVisualSystem'",
         "input": "",
         "output": "[[C]]"
@@ -725,11 +700,6 @@
         "output": "[[C]]"
     },
     {
-        "instruction": "What type of integrator is set for the simulation in the provided code? 'A. Euler explicit', 'B. Euler implicit', 'C. Runge-Kutta', 'D. Verlet'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
         "instruction": "Which method is used to create a GPS sensor in PyChrono? 'A. sens.ChGPSSensor()', 'B. sens.CreateGPSSensor()', 'C. sens.NewGPSSensor()', 'D. sens.GPSSensor()'",
         "input": "",
         "output": "[[A]]"
@@ -770,11 +740,6 @@
         "output": "[[B]]"
     },
     {
-        "instruction": "What type of object is created to represent the floor in the simulation? 'A. ch.ChBodyEasySphere', 'B. ch.ChBodyEasyBox', 'C. ch.ChBodyEasyCylinder', 'D. ch.ChBodyEasyPlane'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
         "instruction": "Which method is used to fix the floor object in place? 'A. floor.SetFixed(True)', 'B. floor.Fix()', 'C. floor.SetStatic(True)', 'D. floor.FixPosition()'",
         "input": "",
         "output": "[[A]]"
@@ -785,12 +750,7 @@
         "output": "[[B]]"
     },
     {
-        "instruction": "What is the main function's role in the PyChrono simulation script? 'A. To define the physical properties', 'B. To run the simulation loop', 'C. To create the ROS node', 'D. To initialize the ROS handlers'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
-        "instruction": "Which ROS message type is used for publishing the ticker value? 'A. Float64', 'B. String', 'C. Int64', 'D. Bool'",
+        "instruction": "Which ROS message type is used for publishing the ticker value in PyChrono simulation? 'A. Float64', 'B. String', 'C. Int64', 'D. Bool'",
         "input": "",
         "output": "[[C]]"
     },
@@ -804,12 +764,6 @@
         "input": "",
         "output": "[[C]]"
     },
-    {
-        "instruction": "What type of collision is set for the chassis in the simulation? 'A. CollisionType_MESH', 'B. CollisionType_PRIMITIVES', 'C. CollisionType_NONE', 'D. CollisionType_BOTH'",
-        "input": "",
-        "output": "[[C]]"
-    },
-
     {
         "instruction": "What is the purpose of the 'ChContactMethod_NSC' in the simulation? 'A. To define the visualization type', 'B. To set the collision system', 'C. To specify the contact method for rigid body simulations', 'D. To initialize the vehicle'",
         "input": "",
@@ -876,17 +830,7 @@
         "output": "[[B]]"
     },
     {
-        "instruction": "What type of collision method is set for the vehicle in the simulation? 'A. ChContactMethod_SMC', 'B. ChContactMethod_NSC', 'C. ChContactMethod_BULLET', 'D. ChContactMethod_NONE'",
-        "input": "",
-        "output": "[[A]]"
-    },
-    {
         "instruction": "What is the purpose of the method SetTexture in the terrain configuration? 'A. To set the color of the terrain', 'B. To define the friction coefficient', 'C. To apply a texture image to the terrain', 'D. To initialize the terrain'",
-        "input": "",
-        "output": "[[C]]"
-    },
-    {
-        "instruction": "Which class is used to create the vehicle in the simulation? 'A. ChVehicle', 'B. ChTrackedVehicle', 'C. M113', 'D. ChTrackedVehicleModel'",
         "input": "",
         "output": "[[C]]"
     },
@@ -926,17 +870,7 @@
         "output": "[[B]]"
     },
     {
-        "instruction": "Which parameter controls the time step for the simulation? 'A. render_step_size', 'B. step_size', 'C. tire_step_size', 'D. contact_method'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
         "instruction": "Which function is used to output the mass of the vehicle? 'A. vehicle.GetMass()', 'B. vehicle.GetVehicle().GetMass()', 'C. vehicle.GetWeight()', 'D. vehicle.MassOutput()'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
-        "instruction": "What is the frame rate set for the visualization in the simulation? 'A. 30 FPS', 'B. 50 FPS', 'C. 60 FPS', 'D. 75 FPS'",
         "input": "",
         "output": "[[B]]"
     },
@@ -944,11 +878,6 @@
         "instruction": "What is the purpose of the 'chrono' module in PyChrono? 'A. To provide core functionalities for creating and managing physical systems', 'B. To handle user input', 'C. To manage file I/O operations', 'D. To create graphical user interfaces'",
         "input": "",
         "output": "[[A]]"
-    },
-    {
-        "instruction": "Which function is used to set the gravitational acceleration in a PyChrono simulation? 'A. sys.SetGravity(chrono.ChVector3d(0, 0, 0))', 'B. sys.SetGravitationalAcceleration(chrono.ChVector3d(0, 0, 0))', 'C. sys.SetGravityAcceleration(chrono.ChVector3d(0, 0, 0))', 'D. sys.SetG(chrono.ChVector3d(0, 0, 0))'",
-        "input": "",
-        "output": "[[B]]"
     },
     {
         "instruction": "What does the 'SetFixed(True)' method do for a body in PyChrono? 'A. It allows the body to move freely', 'B. It makes the body immovable', 'C. It sets the body's mass to zero', 'D. It enables collision for the body'",
@@ -1004,11 +933,6 @@
         "instruction": "What is the purpose of the `ChRandomShapeCreatorConvexHulls` class in the particle emitter? 'A. To create random shapes for particles', 'B. To set the texture of particles', 'C. To define the gravitational force', 'D. To manage particle emission rate'",
         "input": "",
         "output": "[[A]]"
-    },
-    {
-        "instruction": "What is the radius of the sphere body created in the simulation? 'A. 1.5', 'B. 2.1', 'C. 3.0', 'D. 4.0'",
-        "input": "",
-        "output": "[[B]]"
     },
     {
         "instruction": "What is the purpose of the ChSystemNSC class in PyChrono? 'A. To create a visualization system', 'B. To manage the simulation environment', 'C. To define the physics of a body', 'D. To set the gravitational force'",
@@ -1167,11 +1091,6 @@
         "output": "[[A]]"
     },
     {
-        "instruction": "Which parameter defines the terrain height in the simulation? 'A. terrainLength', 'B. terrainWidth', 'C. terrainHeight', 'D. trackPoint'",
-        "input": "",
-        "output": "[[C]]"
-    },
-    {
         "instruction": "Which collision system type is set for the vehicle's system? 'A. chrono.ChCollisionSystem.Type_BULLET', 'B. chrono.ChCollisionSystem.Type_BOX', 'C. chrono.ChCollisionSystem.Type_SPHERE', 'D. chrono.ChCollisionSystem.Type_NONE'",
         "input": "",
         "output": "[[A]]"
@@ -1187,11 +1106,6 @@
         "output": "[[B]]"
     },
     {
-        "instruction": "What type of tire model is specified in the vehicle configuration? 'A. TireModelType_RIGID', 'B. TireModelType_SOFT', 'C. TireModelType_HARD', 'D. TireModelType_FLEXIBLE'",
-        "input": "",
-        "output": "[[A]]"
-    },
-    {
         "instruction": "What does the `terrain.SetPlotType()` method do in the context of the simulation? 'A. Sets the type of vehicle', 'B. Configures the terrain visualization', 'C. Initializes the vehicle', 'D. Adjusts the camera settings'",
         "input": "",
         "output": "[[B]]"
@@ -1200,11 +1114,6 @@
         "instruction": "Which class is used to create the interactive driver system in the PyChrono simulation? 'A. ChDriver', 'B. ChInteractiveDriver', 'C. ChInteractiveDriverIRR', 'D. ChVehicleDriver'",
         "input": "",
         "output": "[[C]]"
-    },
-    {
-        "instruction": "Which parameter is used to set the time interval between render frames in the simulation? 'A. step_size', 'B. render_step_size', 'C. time_interval', 'D. frame_time'",
-        "input": "",
-        "output": "[[B]]"
     },
     {
         "instruction": "What does the `terrain.Initialize()` method require as parameters? 'A. Length, width, mesh resolution', 'B. Height, width, depth', 'C. Length, height, texture', 'D. Width, depth, friction'",
@@ -1287,11 +1196,6 @@
         "output": "[[C]]"
     },
     {
-        "instruction": "How do you set the position of the crank in the simulation? 'A. mcrank.SetPosition(crank_center)', 'B. mcrank.SetPos(crank_center)', 'C. mcrank.PositionSet(crank_center)', 'D. mcrank.SetPosition(crank_center + offset)'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
         "instruction": "Which function is used to add a motor to the crankshaft? 'A. sys.AddMotor(my_motor)', 'B. sys.Add(my_motor)', 'C. my_motor.Initialize()', 'D. sys.AddMotorFunction(my_motor)'",
         "input": "",
         "output": "[[B]]"
@@ -1312,12 +1216,7 @@
         "output": "[[A]]"
     },
     {
-        "instruction": "In the context of the simulation, what does the crank_rad variable represent? 'A. The thickness of the crankshaft', 'B. The radius of the crankshaft', 'C. The length of the connecting rod', 'D. The position of the crankshaft'",
-        "input": "",
-        "output": "[[B]]"
-    },
-    {
-        "instruction": "Which command is used to create a fixed floor in the simulation? 'A. chrono.ChBodyEasyBox()', 'B. chrono.ChBodyFixed()', 'C. chrono.ChBodyStatic()', 'D. chrono.ChBodyBox()'",
+        "instruction": "Which command is used to create a box in the simulation? 'A. chrono.ChBodyEasyBox()', 'B. chrono.ChBodyFixed()', 'C. chrono.ChBodyStatic()', 'D. chrono.ChBodyBox()'",
         "input": "",
         "output": "[[A]]"
     },
