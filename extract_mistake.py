@@ -42,8 +42,6 @@ def extract_correct_answers(json_data):
         correct_answers.append(correct_answer)
 
     return correct_answers
-
-
 # Function to calculate mistakes and save problem with incorrect answers
 def find_mistakes(user_answers, correct_answers):
     correct_answers_user = extract_correct_answers(user_answers)
@@ -64,8 +62,6 @@ def find_mistakes(user_answers, correct_answers):
             })
 
     return mistakes
-
-
 # Function to process all JSON files in a folder and save mistakes to a CSV file
 def process_llm_mistakes(llm_output_path, truth_file, mistakes_csv_path):
     # Load the ground truth data
@@ -97,8 +93,6 @@ def process_llm_mistakes(llm_output_path, truth_file, mistakes_csv_path):
     df_mistakes.to_csv(mistakes_csv_path, index=False)
 
     print(f"Mistakes saved to {mistakes_csv_path}")
-
-
 # Set the folder path, ground truth file, and output CSV file paths
 llm_output_path = r"D:\PyChronoBench\llm_outputs"
 truth_file_path = 'pychrono_test.json'  # Path to the ground truth JSON file
