@@ -3,6 +3,7 @@ import json
 import re
 import pandas as pd
 
+
 # Function to extract correct answers using various regex patterns
 def extract_correct_answers(json_data):
     correct_answers = []
@@ -42,60 +43,66 @@ def extract_correct_answers(json_data):
 
     return correct_answers
 
-# Function to calculate success rate
-def calculate_success_rate(user_answers, correct_answers):
+
+# Function to calculate mistakes and save problem with incorrect answers
+def find_mistakes(user_answers, correct_answers):
     correct_answers_user = extract_correct_answers(user_answers)
     correct_answers_solution = extract_correct_answers(correct_answers)
 
-    total_questions = len(correct_answers_user)
-    correct_matches = sum(1 for ans1, ans2 in zip(correct_answers_user, correct_answers_solution) if ans1 == ans2)
+    mistakes = []
 
-    success_rate = (correct_matches / total_questions) * 100 if total_questions else 0
-    return success_rate, correct_matches, total_questions
+    for idx, (ans_user, ans_solution) in enumerate(zip(correct_answers_user, correct_answers_solution)):
+        if ans_user != ans_solution:
+            # Capture the question, the LLM's incorrect answer, and the correct answer
+            question = user_answers[idx].get('instruction', 'No instruction found')
+            output = user_answers[idx].get('output', 'No output found')
+            mistakes.append({
+                'Problem': question,
+                'LLM Output': output,
+                'Correct Answer': ans_solution,
+                'Mistaken Answer': ans_user
+            })
 
-# Function to process all JSON files in a folder and save results to a CSV file
-def process_llm_results(llm_output_path, truth_file, output_csv_path):
+    return mistakes
+
+
+# Function to process all JSON files in a folder and save mistakes to a CSV file
+def process_llm_mistakes(llm_output_path, truth_file, mistakes_csv_path):
     # Load the ground truth data
     with open(truth_file, 'r', encoding='utf-8') as file:
-
         truth_data = json.load(file)
 
-    results = []
+    all_mistakes = []
 
     # Iterate over all JSON files in the specified folder
     for filename in os.listdir(llm_output_path):
         if filename.endswith(".json"):
             model_path = os.path.join(llm_output_path, filename)
             with open(model_path, 'r', encoding='utf-8') as file:
-                print("loading the ",model_path )
+                print("loading the ", model_path)
                 model_data = json.load(file)
 
-            # Calculate success rate for this model
-            success_rate, correct_matches, total_questions = calculate_success_rate(model_data, truth_data)
+            # Find mistakes for this model
+            mistakes = find_mistakes(model_data, truth_data)
 
-            # Print the results
-            print(f"Model: {filename}")
-            print(f"Success Rate: {success_rate}%")
-            print(f"Correct Matches: {correct_matches} out of {total_questions}\n")
+            # Add the model name to each mistake for context
+            for mistake in mistakes:
+                mistake['Model'] = filename
 
-            # Append the results to the list for CSV
-            results.append({
-                'Model': filename,
-                'Success Rate (%)': success_rate,
-                'Correct Matches': correct_matches,
-                'Total Questions': total_questions
-            })
+            # Append all mistakes for this model
+            all_mistakes.extend(mistakes)
 
-    # Save the results to a CSV file using pandas
-    df = pd.DataFrame(results)
-    df.to_csv(output_csv_path, index=False)
+    # Save the mistakes to a CSV file using pandas
+    df_mistakes = pd.DataFrame(all_mistakes)
+    df_mistakes.to_csv(mistakes_csv_path, index=False)
 
-    print(f"Results saved to {output_csv_path}")
+    print(f"Mistakes saved to {mistakes_csv_path}")
 
-# Set the folder path, ground truth file, and output CSV file path
+
+# Set the folder path, ground truth file, and output CSV file paths
 llm_output_path = r"D:\PyChronoBench\llm_outputs"
 truth_file_path = 'pychrono_test.json'  # Path to the ground truth JSON file
-output_csv_path = 'llm_results.csv'  # Path to save the CSV results
+mistakes_csv_path = 'llm_mistakes.csv'  # Path to save the mistakes to CSV
 
-# Process all JSON files and save results to CSV
-process_llm_results(llm_output_path, truth_file_path, output_csv_path)
+# Process all JSON files and save mistakes to CSV
+process_llm_mistakes(llm_output_path, truth_file_path, mistakes_csv_path)

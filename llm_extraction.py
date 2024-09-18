@@ -3,6 +3,7 @@ import json
 import re
 import pandas as pd
 
+
 # Function to extract correct answers using various regex patterns
 def extract_correct_answers(json_data):
     correct_answers = []
@@ -42,60 +43,54 @@ def extract_correct_answers(json_data):
 
     return correct_answers
 
-# Function to calculate success rate
-def calculate_success_rate(user_answers, correct_answers):
-    correct_answers_user = extract_correct_answers(user_answers)
-    correct_answers_solution = extract_correct_answers(correct_answers)
 
-    total_questions = len(correct_answers_user)
-    correct_matches = sum(1 for ans1, ans2 in zip(correct_answers_user, correct_answers_solution) if ans1 == ans2)
-
-    success_rate = (correct_matches / total_questions) * 100 if total_questions else 0
-    return success_rate, correct_matches, total_questions
-
-# Function to process all JSON files in a folder and save results to a CSV file
-def process_llm_results(llm_output_path, truth_file, output_csv_path):
+# Function to save extracted answers to a CSV for each JSON file
+def save_llm_results_to_csv(llm_output_path, truth_file, llm_csv_folder):
     # Load the ground truth data
     with open(truth_file, 'r', encoding='utf-8') as file:
-
         truth_data = json.load(file)
 
-    results = []
+    correct_answers_solution = extract_correct_answers(truth_data)
 
     # Iterate over all JSON files in the specified folder
     for filename in os.listdir(llm_output_path):
         if filename.endswith(".json"):
             model_path = os.path.join(llm_output_path, filename)
             with open(model_path, 'r', encoding='utf-8') as file:
-                print("loading the ",model_path )
+                print("loading the ", model_path)
                 model_data = json.load(file)
 
-            # Calculate success rate for this model
-            success_rate, correct_matches, total_questions = calculate_success_rate(model_data, truth_data)
+            # Extract correct answers from the model output
+            extracted_answers = extract_correct_answers(model_data)
 
-            # Print the results
-            print(f"Model: {filename}")
-            print(f"Success Rate: {success_rate}%")
-            print(f"Correct Matches: {correct_matches} out of {total_questions}\n")
+            # Create a list of problem/answer data
+            problem_data = []
+            for idx, entry in enumerate(model_data):
+                problem = entry.get('instruction', 'No instruction found')
+                output = entry.get('output', 'No output found')
+                correct_answer = correct_answers_solution[idx]
+                extracted_answer = extracted_answers[idx] if idx < len(extracted_answers) else "Not extracted"
 
-            # Append the results to the list for CSV
-            results.append({
-                'Model': filename,
-                'Success Rate (%)': success_rate,
-                'Correct Matches': correct_matches,
-                'Total Questions': total_questions
-            })
+                # Append the row to the problem_data list
+                problem_data.append({
+                    'Problem': problem,
+                    'Correct Answer': correct_answer,
+                    'LLM Output': output,
+                    'Extracted Answer': extracted_answer
+                })
 
-    # Save the results to a CSV file using pandas
-    df = pd.DataFrame(results)
-    df.to_csv(output_csv_path, index=False)
+            # Save the results to a CSV file for the current LLM model
+            llm_csv_path = os.path.join(llm_csv_folder, f'{filename}.csv')
+            df_problems = pd.DataFrame(problem_data)
+            df_problems.to_csv(llm_csv_path, index=False)
 
-    print(f"Results saved to {output_csv_path}")
+            print(f"Results saved to {llm_csv_path}")
 
-# Set the folder path, ground truth file, and output CSV file path
+
+# Set the folder path, ground truth file, and output CSV folder path
 llm_output_path = r"D:\PyChronoBench\llm_outputs"
 truth_file_path = 'pychrono_test.json'  # Path to the ground truth JSON file
-output_csv_path = 'llm_results.csv'  # Path to save the CSV results
+llm_csv_folder = r"D:\PyChronoBench\llm_csv"  # Folder to save the CSV files for each LLM
 
-# Process all JSON files and save results to CSV
-process_llm_results(llm_output_path, truth_file_path, output_csv_path)
+# Process all JSON files and save extracted answers to individual CSVs
+save_llm_results_to_csv(llm_output_path, truth_file_path, llm_csv_folder)
