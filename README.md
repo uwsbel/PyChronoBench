@@ -2,7 +2,7 @@
 
 **PyChronoBench** is a multiple-choice benchmark designed to evaluate the performance of large language models (LLMs) in using the PyChrono API. The benchmark consists of **280 multiple-choice problems** that cover various aspects of PyChrono API usage.
 
-[LLM Performance Plot](visualization.png)
+![LLM Performance Plot](visualization.png)
 
 ### Features
 
